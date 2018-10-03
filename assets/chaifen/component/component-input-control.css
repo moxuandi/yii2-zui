@@ -1,0 +1,24 @@
+/* component/input-control.less --- http://zui.sexy/#component/input-control */
+.input-control-icon-left,.input-control-icon-right,.input-control-label-left,.input-control-label-right{position:absolute;top:1px;z-index:5;height:30px;line-height:30px;opacity:.5;}
+.input-control-icon-left,.input-control-icon-right{width:30px;text-align:center;}
+.input-control-label-left,.input-control-icon-left{left:1px;}
+.input-control-label-right,.input-control-icon-right{right:1px;}
+.input-control-label-left,.input-control-label-right{width:70px;padding:0 8px;overflow:hidden;text-overflow:ellipsis;}
+.has-label-left-sm > .input-control-label-left,.has-label-left-sm > .input-control-label-right{width:55px;}
+.has-label-left-lg > .input-control-label-left,.has-label-left-lg > .input-control-label-right{width:95px;}
+.input-control{position:relative;}
+.input-control.has-icon-left > .form-control{padding-left:30px;}
+.input-control.has-icon-right > .form-control{padding-right:30px;}
+.input-control.has-label-left > .form-control{padding-left:70px;}
+.input-control.has-label-right > .form-control{padding-right:70px;}
+.input-control.has-label-left-sm > .form-control{padding-left:55px;}
+.input-control.has-label-right-sm > .form-control{padding-right:55px;}
+.input-control.has-label-left-lg > .form-control{padding-left:95px;}
+.input-control.has-label-right-lg > .form-control{padding-right:95px;}
+.input-control > a:hover{background-color:#f1f1f1;opacity:1;}
+.form-control:focus + [class^="input-control-"],.form-control:focus + [class^="input-control-"] + [class^="input-control-"]{opacity:1;}
+.form-control:focus + .input-control-label-left{color:#145ccd;}
+.empty + .search-clear-btn,.empty + .search-icon + .search-clear-btn{opacity:0 !important;}
+input:placeholder-shown + .search-clear-btn,input:placeholder-shown + .search-icon + .search-clear-btn{opacity:0 !important;}
+.search-box-circle .input-control-icon-left,.search-box-circle .input-control-icon-right,.search-box-circle > .form-control{border-radius:16px;}
+.search-box-circle + .input-group-btn > .btn{border-radius:0 16px 16px 0;}

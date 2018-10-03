@@ -1,0 +1,20 @@
+/* controls/switch.less --- http://zui.sexy/#control/switch */
+.switch{position:relative;}
+.switch > input{position:absolute;top:0;left:0;display:block;width:100%;height:100%;margin:0;opacity:0;}
+.switch > label{display:block;padding:5px 0 5px 35px;margin:0;font-weight:normal;line-height:20px;}
+.switch > label:before,.switch > label:after{position:absolute;top:5px;left:0;display:block;width:30px;height:20px;pointer-events:none;content:' ';border:1px solid #ddd;border-radius:10px;-webkit-transition:all .4s cubic-bezier(.175, .885, .32, 1);-o-transition:all .4s cubic-bezier(.175, .885, .32, 1);transition:all .4s cubic-bezier(.175, .885, .32, 1);}
+.switch > label:after{top:6px;width:18px;height:18px;background-color:#fff;border-color:#ccc;border-radius:9px;-webkit-box-shadow:rgba(0, 0, 0, .05) 0 1px 4px, rgba(0, 0, 0, .12) 0 1px 2px;box-shadow:rgba(0, 0, 0, .05) 0 1px 4px, rgba(0, 0, 0, .12) 0 1px 2px;}
+.switch > input:checked + label:before{background-color:#3280fc;border-color:#3280fc;}
+.switch > input:checked + label:after{left:11px;border-color:#fff;}
+.switch.text-left > label{padding:5px 35px 5px 0;}
+.switch.text-left > label:before,.switch.text-left > label:after{right:0;left:auto;}
+.switch.text-left > label:after{right:12px;}
+.switch.text-left > input:checked + label:after{right:1px;left:auto;}
+.switch.disabled{pointer-events:none;}
+.switch.disabled > label,.switch > input[disabled] + label{color:#ddd;pointer-events:none;}
+.switch.disabled > label:before,.switch > input[disabled] + label:before{background-color:#fafafa;}
+.switch.disabled > label:after,.switch > input[disabled] + label:after{opacity:.7;}
+.switch.disabled > input:checked + label:before,.switch > input[disabled]:checked + label:before{background-color:#ccc;border-color:#ccc;}
+.switch input:focus + label{color:#3280fc;}
+.switch input:focus + label:before{border-color:#3280fc;}
+.switch-inline{display:inline-block;}

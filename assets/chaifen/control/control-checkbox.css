@@ -1,0 +1,14 @@
+/* components/forms.less --- http://zui.sexy/#control/textbox */
+
+/* components/forms.condensed.less --- http://zui.sexy/#control/textbox */
+
+
+/* 可能 */
+/* controls/checkbox.less --- http://zui.sexy/#control/checkbox */
+.checkbox-primary{position:relative;display:inline-block;}
+.checkbox-primary > label{padding-left:25px;cursor:pointer;}
+.checkbox-primary > label:before,.checkbox-primary > label:after{position:absolute;top:2px;right:0;left:0;display:block;width:16px;height:16px;line-height:16px;text-align:center;content:' ';border-radius:2px;}
+.checkbox-primary > label:after{z-index:1;border:1px solid #808080;-webkit-transition:.4s cubic-bezier(.175, .885, .32, 1);-o-transition:.4s cubic-bezier(.175, .885, .32, 1);transition:.4s cubic-bezier(.175, .885, .32, 1);-webkit-transition-property:border, background-color;-o-transition-property:border, background-color;transition-property:border, background-color;}
+.checkbox-primary > label:before{top:3px;z-index:2;font-family:ZenIcon;font-size:14px;font-style:normal;font-weight:normal;font-variant:normal;line-height:1;text-transform:none;content:'\e60d';opacity:0;-webkit-transition:.2s cubic-bezier(.175, .885, .32, 1);-o-transition:.2s cubic-bezier(.175, .885, .32, 1);transition:.2s cubic-bezier(.175, .885, .32, 1);-webkit-transition-property:opacity, -webkit-transform;-o-transition-property:opacity, -o-transform;transition-property:opacity, -webkit-transform;transition-property:opacity, transform;transition-property:opacity, transform, -webkit-transform, -o-transform;-webkit-transform:scale(0); -ms-transform:scale(0);-o-transform:scale(0);transform:scale(0);speak:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.checkbox-primary.checked > label:after{background-color:#3280fc;border-color:#3280fc;border-width:4px;}
+.checkbox-primary.checked > label:before{color:white;opacity:1;-webkit-transform:scale(1); -ms-transform:scale(1);-o-transform:scale(1);transform:scale(1);}

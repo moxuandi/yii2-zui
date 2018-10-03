@@ -1,0 +1,30 @@
+/* controls/labels.less --- http://zui.sexy/#control/label */
+.label{display:inline;padding:.2em .6em .2em;font-size:75%;line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:middle;background-color:#808080;border-radius:.25em;}
+.label[href]:hover,.label[href]:focus{color:#fff;background-color:#666;}
+.label.label-circle{color:#808080;background:none;border:1px solid #808080;}
+a.label:hover,a.label:focus{color:#fff;text-decoration:none;cursor:pointer;}
+.label:empty{display:none;}
+.label-badge{display:inline-block;min-width:18px;padding:3px 7px;font-size:12px;line-height:1;border-radius:9px;}
+.label-dot{display:inline-block;width:10px;height:10px;padding:0;line-height:13px;text-indent:-9999em;border-radius:5px;}
+.label-dot:empty{display:inline-block;}
+.label-primary{background-color:#3280fc;}
+.label-primary[href]:hover,.label-primary[href]:focus{color:#fff;background-color:#0462f7;}
+.label-primary.label-circle{color:#3280fc;background:none;border:1px solid #3280fc;}
+.label-success{background-color:#38b03f;}
+.label-success[href]:hover,.label-success[href]:focus{color:#fff;background-color:#2c8931;}
+.label-success.label-circle{color:#38b03f;background:none;border:1px solid #38b03f;}
+.label-info{background-color:#03b8cf;}
+.label-info[href]:hover,.label-info[href]:focus{color:#fff;background-color:#028b9d;}
+.label-info.label-circle{color:#03b8cf;background:none;border:1px solid #03b8cf;}
+.label-warning{background-color:#f1a325;}
+.label-warning[href]:hover,.label-warning[href]:focus{color:#fff;background-color:#d5890e;}
+.label-warning.label-circle{color:#f1a325;background:none;border:1px solid #f1a325;}
+.label-danger{background-color:#ea644a;}
+.label-danger[href]:hover,.label-danger[href]:focus{color:#fff;background-color:#e53d1c;}
+.label-danger.label-circle{color:#ea644a;background:none;border:1px solid #ea644a;}
+
+/* controls/labels.fix.less --- http://zui.sexy/#control/label */
+.nav-primary > li > a > .label,.btn .label{position:relative;top:-1px;}
+.btn-primary .label,.btn-success .label,.btn-info .label,.btn-danger .label,.btn-warning .label{background-color:rgba(0, 0, 0, .2);}
+.list-group-item.active > .label,.nav-primary > .active > a > .label,.nav-pills > .active > a > .label{color:#145ccd;background-color:#fff;}
+.nav > li > a > .label{margin-left:3px;}

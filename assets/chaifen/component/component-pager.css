@@ -1,0 +1,35 @@
+/* component/pager.less --- http://zui.sexy/#component/pager */
+.pager{display:inline-block;padding-left:0;margin:20px 0;list-style:none;}
+.pager > li{display:inline;}
+.pager > li > a,.pager > li > span{position:relative;float:left;padding:5px 12px;margin-left:-1px;line-height:1.53846154;text-decoration:none;background-color:#fff;border:1px solid #ddd;}
+.pager > li:first-child > a,.pager > li:first-child > span{margin-left:0;border-top-left-radius:4px;border-bottom-left-radius:4px;}
+.pager > li:last-child > a,.pager > li:last-child > span{border-top-right-radius:4px;border-bottom-right-radius:4px;}
+.pager > li > a:hover,.pager > li > span:hover,.pager > li > a:focus,.pager > li > span:focus{z-index:2;background-color:#e5e5e5;}
+.pager > li.active > a,.pager > li.active > span,.pager > li.active > a:hover,.pager > li.active > span:hover{z-index:3;color:#fff;cursor:default;background-color:#3280fc;border-color:#3280fc;}
+.pager > li.disabled > span,.pager > li.disabled > span:hover,.pager > li.disabled > span:focus,.pager > li.disabled > a,.pager > li.disabled > a:hover,.pager > li.disabled > a:focus{color:#ddd;pointer-events:none;cursor:not-allowed;background-color:#fff;border-color:#ddd;}
+.pager-justify{display:block;}
+.pager-justify .next > a,.pager-justify .next > span{float:right;border-radius:4px;}
+.pager-justify .previous > a,.pager-justify .previous > span{float:left;border-radius:4px;}
+.pager-goto{width:100px;text-align:center;}
+.pager > li > div{float:left;}
+.pager > li .pager-goto,.pager > li .pager-size-menu,.pager > li.space{margin:0 5px;}
+.pager-label{position:relative;float:left;padding:5px 4px;margin-left:-1px;line-height:1.53846154;text-decoration:none;border:1px solid transparent;}
+.pager-item-left > a{border-top-left-radius:4px;border-bottom-left-radius:4px;}
+.pager-item-right > a{border-top-right-radius:4px;border-bottom-right-radius:4px;}
+
+/* component/pager.size.less --- http://zui.sexy/#component/pager */
+.pager-lg > li > a,.pager-lg > li > span{padding:10px 16px;font-size:17px;}
+.pager-lg > li:first-child > a,.pager-lg > li:first-child > span{border-top-left-radius:6px;border-bottom-left-radius:6px;}
+.pager-lg > li:last-child > a,.pager-lg > li:last-child > span{border-top-right-radius:6px;border-bottom-right-radius:6px;}
+.pager-sm > li > a,.pager-sm > li > span{padding:2px 8px;font-size:12px;}
+.pager-sm > li:first-child > a,.pager-sm > li:first-child > span{border-top-left-radius:3px;border-bottom-left-radius:3px;}
+.pager-sm > li:last-child > a,.pager-sm > li:last-child > span{border-top-right-radius:3px;border-bottom-right-radius:3px;}
+
+/* component/pager.types.less --- http://zui.sexy/#component/pager */
+.pager-pills > li:first-child > a,.pager-pills > li:first-child > span{border-radius:16px 0 0 16px;}
+.pager-pills > li:last-child > a,.pager-pills > li:last-child > span{border-radius:0 16px 16px 0;}
+.pager-pills.pager-justify > li > a,.pager-pills.pager-justify > li > span{border-radius:16px;}
+.pager-loose{display:block;margin:20px 0;}
+.pager-loose.pager-pills > li > a,.pager-loose.pager-pills > li > span{border-radius:16px;}
+.pager-loose > li > a,.pager-loose > li > span{margin-left:5px;border-radius:4px;}
+.pager-loose > li:first-child > a,.pager-loose > li:first-child > span{margin-left:0;}

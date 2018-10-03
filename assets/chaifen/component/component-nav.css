@@ -1,0 +1,83 @@
+/* component/navs.less --- http://zui.sexy/#component/nav */
+.nav{padding-left:0;margin-bottom:0;list-style:none;}
+.nav > .nav-heading{padding:8px 15px;font-weight:bold;color:#808080;}
+.nav > li{position:relative;display:block;}
+.nav > li > a{position:relative;display:block;padding:8px 15px;color:#353535;}
+.nav > li > a:hover,.nav > li > a:focus{color:#0d3d88;text-decoration:none;background-color:#f1f1f1;}
+.nav > li.disabled > a{color:#ddd;}
+.nav > li.disabled > a:hover,.nav > li.disabled > a:focus{color:#ddd;text-decoration:none;cursor:not-allowed;background-color:transparent;}
+.nav .open > a,.nav .open > a:hover,.nav .open > a:focus{background-color:#f1f1f1;border-color:#145ccd;}
+.nav > li > a > img{max-width:none;}
+.nav-pills > li{float:left;}
+.nav-pills > li > a{border-radius:20px;}
+.nav-pills > li + li{margin-left:2px;}
+.nav-pills > li.active > a,.nav-pills > li.active > a:hover,.nav-pills > li.active > a:focus{color:#fff;background-color:#3280fc;}
+.nav-primary > li{float:left;margin-left:-1px;}
+.nav-primary > li:first-child > a{margin-left:0;border-top-left-radius:4px;border-bottom-left-radius:4px;}
+.nav-primary > li:last-child > a{border-top-right-radius:4px;border-bottom-right-radius:4px;}
+.nav-primary > li > a{border:1px solid #ddd;}
+.nav-primary > li.active > a,.nav-primary > li.active > a:hover,.nav-primary > li.active > a:focus{color:#fff;background-color:#3280fc;border-color:#3280fc;}
+.nav-secondary > li{float:left;}
+.nav-secondary > li > a{border-bottom:2px solid #e5e5e5;}
+.nav-secondary > li.active > a,.nav-secondary > li.active > a:hover,.nav-secondary > li.active > a:focus{color:#3280fc;border-bottom-color:#3280fc;}
+.nav-secondary > li.nav-heading{border-bottom:2px solid #e5e5e5;}
+.nav-stacked > li{float:none;}
+.nav-stacked > li + li{margin-top:2px;margin-left:0;}
+.nav-stacked.nav-primary > li,.nav-stacked.nav-primary > li > a{margin-left:0;border-bottom-right-radius:0;border-bottom-left-radius:0;}
+.nav-stacked.nav-primary > li + li{margin-top:-1px;}
+.nav-stacked.nav-primary > li:first-child{margin-top:0;}
+.nav-stacked.nav-primary > li:first-child > a,.nav-stacked.nav-primary > li:first-child.nav-heading{margin-left:0;border-top-left-radius:4px;border-top-right-radius:4px;}
+.nav-stacked.nav-primary > li:last-child > a{border-top-left-radius:0;border-top-right-radius:0;border-bottom-right-radius:4px;border-bottom-left-radius:4px;}
+.nav-stacked.nav-primary > li.nav-heading{background-color:#f1f1f1;border:1px solid #ddd;}
+.nav-stacked.nav-secondary > li > a{border:none;border-top-right-radius:4px;border-bottom-right-radius:4px;-webkit-box-shadow:inset 2px 0 0 #f5f5f5;box-shadow:inset 2px 0 0 #f5f5f5;}
+.nav-stacked.nav-secondary > li > a:hover{-webkit-box-shadow:inset 2px 0 0 #e5e5e5;box-shadow:inset 2px 0 0 #e5e5e5;}
+.nav-stacked.nav-secondary > li + li{margin-top:-1px;}
+.nav-stacked.nav-secondary > li:first-child{margin-top:0;}
+.nav-stacked.nav-secondary > li.active > a,.nav-stacked.nav-secondary > li.active > a:hover,.nav-stacked.nav-secondary > li.active > a:focus{background-color:#f5f5f5;-webkit-box-shadow:inset 2px 0 0 #3280fc;box-shadow:inset 2px 0 0 #3280fc;}
+.nav-stacked.nav-secondary > li.nav-heading{border-bottom:1px solid #ddd;}
+.nav-justified{width:100%;}
+.nav-justified > li{float:none;}
+.nav-justified > li > a{margin-bottom:5px;text-align:center;}
+@media (min-width:768px){
+  .nav-justified > li{display:table-cell;width:1%;}
+  .nav-justified > li > a{margin-bottom:0;}
+  .nav-justified.nav-primary > li + li > a{border-left:0;}
+}
+
+/* component/navs.tabs.less --- http://zui.sexy/#component/nav */
+.nav-tabs{border-bottom:1px solid #ddd;}
+.nav-tabs > li{float:left;margin-bottom:-1px;}
+.nav-tabs > li > a{margin-right:2px;line-height:1.53846154;border:1px solid transparent;border-radius:4px 4px 0 0;}
+.nav-tabs > li > a:hover{border-color:#e5e5e5 #e5e5e5 #ddd;}
+.nav-tabs > li.active > a,.nav-tabs > li.active > a:hover,.nav-tabs > li.active > a:focus{color:#808080;cursor:default;background-color:#fff;border:1px solid #ddd;border-bottom-color:transparent;}
+.nav-tabs.nav-justified{width:100%;border-bottom:0;}
+.nav-tabs.nav-justified > li{float:none;}
+.nav-tabs.nav-justified > li > a{margin-bottom:5px;text-align:center;}
+@media (min-width:768px){
+  .nav-tabs.nav-justified > li{display:table-cell;width:1%;}
+  .nav-tabs.nav-justified > li > a{margin-bottom:0;}
+  .nav-tabs.nav-justified.nav-primary > li + li > a{border-left:0;}
+}
+.nav-tabs.nav-justified > li > a{margin-right:0;border-radius:4px;}
+.nav-tabs.nav-justified > .active > a,.nav-tabs.nav-justified > .active > a:hover,.nav-tabs.nav-justified > .active > a:focus{border:1px solid #ddd;}
+@media (min-width:768px){
+  .nav-tabs.nav-justified > li > a{border-bottom:1px solid #ddd;border-radius:4px 4px 0 0;}
+  .nav-tabs.nav-justified > .active > a,.nav-tabs.nav-justified > .active > a:hover,.nav-tabs.nav-justified > .active > a:focus{border-bottom-color:#fff;}
+}
+@-moz-document url-prefix(){
+  .nav-tabs > li.active > a:focus .nav-tabs > li > a:focus{outline:0;}
+}
+.nav-tabs.nav-stacked{border-right:1px solid #ddd;border-bottom:none;}
+.nav-tabs.nav-stacked > li{float:none;margin-right:-1px;margin-bottom:0;}
+.nav-tabs.nav-stacked > li > a{margin-right:0;border-radius:4px 0 0 4px;}
+.nav-tabs.nav-stacked > li.active > a,.nav-tabs.nav-stacked > li.active > a:hover,.nav-tabs.nav-stacked > li.active > a:focus{border:1px solid #ddd;border-right-color:transparent;}
+.nav-tabs-justified{border-bottom:0;}
+.nav-tabs-justified > li > a{margin-right:0;border-radius:4px;}
+.nav-tabs-justified > .active > a,.nav-tabs-justified > .active > a:hover,.nav-tabs-justified > .active > a:focus{border:1px solid #ddd;}
+@media (min-width:768px){
+  .nav-tabs-justified > li > a{border-bottom:1px solid #ddd;border-radius:4px 4px 0 0;}
+  .nav-tabs-justified > .active > a,.nav-tabs-justified > .active > a:hover,.nav-tabs-justified > .active > a:focus{border-bottom-color:#fff;}
+}
+.tab-content > .tab-pane{display:none;}
+.tab-content > .active{display:block;}
+.nav-tabs .dropdown-menu{margin-top:-1px;border-top-left-radius:0;border-top-right-radius:0;}

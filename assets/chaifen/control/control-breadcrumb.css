@@ -1,0 +1,5 @@
+/* controls/breadcrumbs.less --- http://zui.sexy/#control/breadcrumb */
+.breadcrumb{padding:8px 15px;margin-bottom:20px;list-style:none;border-radius:4px;}
+.breadcrumb > li{display:inline-block;}
+.breadcrumb > li + li:before{padding:0 5px;color:#ccc;content:"/\00a0";}
+.breadcrumb > .active{color:#808080;}

@@ -1,0 +1,52 @@
+/* component/panels.less --- http://zui.sexy/#component/panel */
+.panel{margin-bottom:20px;background-color:#fff;border:1px solid transparent;border-color:#ddd;border-radius:4px;-webkit-box-shadow:0 1px 1px rgba(0, 0, 0, .05);box-shadow:0 1px 1px rgba(0, 0, 0, .05);}
+.panel > .panel-heading{color:#333;background-color:#f5f5f5;border-color:#ddd;}
+.panel > .panel-heading + .panel-collapse .panel-body{border-top-color:#ddd;}
+.panel > .panel-footer + .panel-collapse .panel-body{border-bottom-color:#ddd;}
+.panel-body{padding:15px;}
+.panel > .table{margin-bottom:0;}
+.panel > .panel-body + .table{border-top:1px solid #ddd;}
+.panel-heading{padding:8px 15px;border-bottom:1px solid transparent;border-top-left-radius:3px;border-top-right-radius:3px;}
+.panel-title{margin-top:0;margin-bottom:0;font-size:15px;}
+.panel-title > a{color:inherit;}
+.panel-footer{padding:10px 15px;background-color:#f5f5f5;border-top:1px solid #ddd;border-bottom-right-radius:3px;border-bottom-left-radius:3px;}
+
+/* component/panels.types.less --- http://zui.sexy/#component/panel */
+.panel-primary{border-color:#3280fc;}
+.panel-primary > .panel-heading{color:#fff;background-color:#3280fc;border-color:#3280fc;}
+.panel-primary > .panel-heading + .panel-collapse .panel-body{border-top-color:#3280fc;}
+.panel-primary > .panel-footer + .panel-collapse .panel-body{border-bottom-color:#3280fc;}
+.panel-success{border-color:#bae8b6;}
+.panel-success > .panel-heading{color:#38b03f;background-color:#ddf4df;border-color:#bae8b6;}
+.panel-success > .panel-heading + .panel-collapse .panel-body{border-top-color:#bae8b6;}
+.panel-success > .panel-footer + .panel-collapse .panel-body{border-bottom-color:#bae8b6;}
+.panel-warning{border-color:#ffdcbc;}
+.panel-warning > .panel-heading{color:#f1a325;background-color:#fff0d5;border-color:#ffdcbc;}
+.panel-warning > .panel-heading + .panel-collapse .panel-body{border-top-color:#ffdcbc;}
+.panel-warning > .panel-footer + .panel-collapse .panel-body{border-bottom-color:#ffdcbc;}
+.panel-danger{border-color:#ffc6c7;}
+.panel-danger > .panel-heading{color:#ea644a;background-color:#ffe5e0;border-color:#ffc6c7;}
+.panel-danger > .panel-heading + .panel-collapse .panel-body{border-top-color:#ffc6c7;}
+.panel-danger > .panel-footer + .panel-collapse .panel-body{border-bottom-color:#ffc6c7;}
+.panel-info{border-color:#a2e4de;}
+.panel-info > .panel-heading{color:#03b8cf;background-color:#ddf3f5;border-color:#a2e4de;}
+.panel-info > .panel-heading + .panel-collapse .panel-body{border-top-color:#a2e4de;}
+.panel-info > .panel-footer + .panel-collapse .panel-body{border-bottom-color:#a2e4de;}
+
+/* component/panels.group.less --- http://zui.sexy/#component/panel */
+.panel-group{margin-bottom:20px;}
+.panel-group .panel{margin-bottom:0;border-radius:4px;}
+.panel-group .panel + .panel{margin-top:5px;}
+.panel-group .panel-heading{border-bottom:0;}
+.panel-group .panel-heading + .panel-collapse > .panel-body,.panel-group .panel-heading + .panel-collapse > .list-group{border-top:1px solid #ddd;}
+.panel-group .panel-footer{border-top:0;}
+.panel-group .panel-footer + .panel-collapse .panel-body{border-bottom:1px solid #ddd;}
+
+/* component/panels.fix.less --- http://zui.sexy/#component/panel */
+.panel > .list-group,.panel > .panel-collapse > .list-group{margin-bottom:0;}
+.panel > .list-group .list-group-item,.panel > .panel-collapse > .list-group .list-group-item{border-width:1px 0;border-radius:0;}
+.panel > .list-group:first-child .list-group-item:first-child,.panel > .panel-collapse > .list-group:first-child .list-group-item:first-child{border-top:0;border-top-left-radius:3px;border-top-right-radius:3px;}
+.panel > .list-group:last-child .list-group-item:last-child,.panel > .panel-collapse > .list-group:last-child .list-group-item:last-child{border-bottom:0;border-bottom-right-radius:3px;border-bottom-left-radius:3px;}
+.panel > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child{border-top-left-radius:0;border-top-right-radius:0;}
+.panel-heading + .list-group .list-group-item:first-child{border-top-width:0;}
+.list-group + .panel-footer{border-top-width:0;}

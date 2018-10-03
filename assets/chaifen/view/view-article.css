@@ -1,0 +1,39 @@
+/* view/article.less --- http://zui.sexy/#view/article */
+.article{padding:20px;}
+.article > header h1,.article > header h2,.article > header h3{margin-bottom:20px;line-height:1.5;}
+.article > header > .abstract,.article > header > dl{padding:10px 15px;font-size:12px;color:#686868;background-color:#f1f1f1;}
+.article > header > .abstract > p:last-child,.article > header > dl > p:last-child{margin-bottom:0;}
+.article > header > dl{margin:0;border-bottom:1px solid #e9e9e9;}
+.article > header > dl.pull-right{background-color:transparent;border:none;}
+.article > footer{border-top:1px dashed #d7d7d7;}
+.article > footer > p{padding:10px 15px;}
+.article > .content,.article-content{padding:20px 0;font-size:14px;line-height:1.78571429;}
+.article > .content h1,.article-content h1{font-size:20px;}
+.article > .content h2,.article-content h2{font-size:18px;}
+.article > .content h3,.article-content h3{font-size:16px;}
+.article > .content h4,.article-content h4{margin-top:15px;font-size:14px;}
+.article > .content h5,.article-content h5{margin-top:15px;font-size:13px;}
+.article > .content h6,.article-content h6{margin-top:15px;font-size:11px;}
+.article > .content img,.article-content img{margin:10px 0;}
+.article > .content p > img,.article-content p > img{margin-right:10px;}
+.article > .content p > img[align='right'],.article-content p > img[align='right']{margin-left:10px;}
+.article > .content dl,.article-content dl{padding-right:2em;padding-left:2em;}
+.article > .content table,.article-content table{margin-bottom:20px;}
+.article > .content table th,.article-content table th,.article > .content table td,.article-content table td{padding:8px;line-height:1.53846154;vertical-align:top;border-bottom:1px solid #ddd;}
+.article > .content table > thead > tr > th,.article-content table > thead > tr > th{vertical-align:bottom;background-color:#f1f1f1;border-bottom:1px solid #ddd;}
+.article-content p{margin-bottom:0;}
+.article-content table{width:100%;}
+.article > .content table th,.article > .content table td,.article > .content table > thead > tr > th{border:1px solid #ddd;}
+body.article-content{padding:8px;}
+
+/* view/article.condensed.less --- http://zui.sexy/#view/article */
+.article-condensed{padding:20px 0;}
+.article-condensed > header{padding:0 20px;}
+.article-condensed > header > .abstract,.article-condensed > header > dl{padding:10px 15px;margin:0 -20px;}
+.article-condensed > .content,.article-condensed > .article-content{padding:20px;}
+.article-condensed > .content > img,.article-condensed > .article-content > img,.article-condensed > .content > pre,.article-condensed > .article-content > pre{margin-right:-20px;margin-left:-20px;border-radius:0;}
+.article-condensed > .content > pre,.article-condensed > .article-content > pre{border-right:none;border-left:none;}
+.article-condensed > footer{border-top:1px dashed #d7d7d7;}
+.article-condensed > footer > p{padding:10px 15px;}
+.article-condensed > footer > .pager-justify > .previous > a{border-left:none;border-radius:0;}
+.article-condensed > footer > .pager-justify > .next > a{border-right:none;border-radius:0;}

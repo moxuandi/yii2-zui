@@ -1,0 +1,53 @@
+/* modules/popovers.less --- http://zui.sexy/#javascript/popover */
+.popover{position:absolute;top:0;left:0;z-index:1010;display:none;max-width:300px;text-align:left;white-space:normal;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0, 0, 0, .2);border-radius:4px;-webkit-box-shadow:0 5px 10px rgba(0, 0, 0, .2);box-shadow:0 5px 10px rgba(0, 0, 0, .2);}
+.popover.top{margin-top:-10px;}
+.popover.right{margin-left:10px;}
+.popover.bottom{margin-top:10px;}
+.popover.left{margin-left:-10px;}
+.popover.no-arrow.top{margin-top:0;}
+.popover.no-arrow.right{margin-left:0;}
+.popover.no-arrow.bottom{margin-top:0;}
+.popover.no-arrow.left{margin-left:0;}
+.popover-title{padding:8px 14px;margin:0;font-size:13px;font-weight:normal;line-height:18px;background-color:#f7f7f7;border-bottom:1px solid #ebebeb;border-radius:4px 4px 0 0;}
+.popover-content{padding:9px 14px;}
+.popover .arrow,.popover .arrow:after{position:absolute;display:block;width:0;height:0;border-color:transparent;border-style:solid;}
+.popover .arrow{border-width:11px;}
+.popover .arrow:after{content:"";border-width:10px;}
+.popover.top .arrow{bottom:-11px;left:50%;margin-left:-11px;border-top-color:#999;border-top-color:rgba(0, 0, 0, .25);border-bottom-width:0;}
+.popover.top .arrow:after{bottom:1px;margin-left:-10px;content:" ";border-top-color:#fff;border-bottom-width:0;}
+.popover.right .arrow{top:50%;left:-11px;margin-top:-11px;border-right-color:#999;border-right-color:rgba(0, 0, 0, .25);border-left-width:0;}
+.popover.right .arrow:after{bottom:-10px;left:1px;content:" ";border-right-color:#fff;border-left-width:0;}
+.popover.bottom .arrow{top:-11px;left:50%;margin-left:-11px;border-top-width:0;border-bottom-color:#999;border-bottom-color:rgba(0, 0, 0, .25);}
+.popover.bottom .arrow:after{top:1px;margin-left:-10px;content:" ";border-top-width:0;border-bottom-color:#fff;}
+.popover.left .arrow{top:50%;right:-11px;margin-top:-11px;border-right-width:0;border-left-color:#999;border-left-color:rgba(0, 0, 0, .25);}
+.popover.left .arrow:after{right:1px;bottom:-10px;content:" ";border-right-width:0;border-left-color:#fff;}
+.popover-primary{border-color:#3280fc;}
+.popover-primary .popover-title{color:#fff;background-color:#3280fc;}
+.popover-primary.popover.top .arrow{border-top-color:#3280fc;}
+.popover-primary.popover.right .arrow{border-right-color:#3280fc;}
+.popover-primary.popover.left .arrow{border-left-color:#3280fc;}
+.popover-primary.popover.bottom .arrow,.popover-primary.popover.bottom .arrow:after{border-bottom-color:#3280fc;}
+.popover-success{border-color:#38b03f;}
+.popover-success .popover-title{color:#fff;background-color:#38b03f;}
+.popover-success.popover.top .arrow{border-top-color:#38b03f;}
+.popover-success.popover.right .arrow{border-right-color:#38b03f;}
+.popover-success.popover.left .arrow{border-left-color:#38b03f;}
+.popover-success.popover.bottom .arrow,.popover-success.popover.bottom .arrow:after{border-bottom-color:#38b03f;}
+.popover-info{border-color:#03b8cf;}
+.popover-info .popover-title{color:#fff;background-color:#03b8cf;}
+.popover-info.popover.top .arrow{border-top-color:#03b8cf;}
+.popover-info.popover.right .arrow{border-right-color:#03b8cf;}
+.popover-info.popover.left .arrow{border-left-color:#03b8cf;}
+.popover-info.popover.bottom .arrow,.popover-info.popover.bottom .arrow:after{border-bottom-color:#03b8cf;}
+.popover-warning{border-color:#f1a325;}
+.popover-warning .popover-title{color:#fff;background-color:#f1a325;}
+.popover-warning.popover.top .arrow{border-top-color:#f1a325;}
+.popover-warning.popover.right .arrow{border-right-color:#f1a325;}
+.popover-warning.popover.left .arrow{border-left-color:#f1a325;}
+.popover-warning.popover.bottom .arrow,.popover-warning.popover.bottom .arrow:after{border-bottom-color:#f1a325;}
+.popover-danger{border-color:#ea644a;}
+.popover-danger .popover-title{color:#fff;background-color:#ea644a;}
+.popover-danger.popover.top .arrow{border-top-color:#ea644a;}
+.popover-danger.popover.right .arrow{border-right-color:#ea644a;}
+.popover-danger.popover.left .arrow{border-left-color:#ea644a;}
+.popover-danger.popover.bottom .arrow,.popover-danger.popover.bottom .arrow:after{border-bottom-color:#ea644a;}
