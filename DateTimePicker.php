@@ -25,14 +25,14 @@ class DateTimePicker extends InputWidget
     {
         if($this->hasModel()){
             parent::init();
-            if($this->phpFormat !== null){
+            if($this->phpFormat !== null && Html::getAttributeValue($this->model, $this->attribute)){
                 $this->options['value'] = date($this->phpFormat, Html::getAttributeValue($this->model, $this->attribute));
             }
         }elseif($this->name){
             if(!isset($this->options['id'])){
                 $this->options['id'] = $this->id .= '_' . $this->name;
             }
-            if($this->phpFormat !== null){
+            if($this->phpFormat !== null && $this->value){
                 $this->value = date($this->phpFormat, $this->value);
             }
         }else{
