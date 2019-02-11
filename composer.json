@@ -2,7 +2,7 @@
     "name": "moxuandi/yii2-zui",
     "description": "The Twitter ZUI extension for the Yii framework",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension","zui","开源HTML5跨屏框架"],
+    "keywords": ["yii2","extension","zui","ZUI","开源HTML5跨屏框架","响应式","自适应"],
     "license": "MIT",
     "authors": [
         {
@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "~2.0.6"
+        "yiisoft/yii2": "~2.0.16"
     },
     "autoload": {
         "psr-4": {
