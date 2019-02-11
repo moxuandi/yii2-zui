@@ -3914,22 +3914,6 @@ textarea.input-lg {
     text-align: right;
     }
   }
-.required {
-  position: relative;
-  }
-.required:after {
-  position: absolute;
-  top: 0;
-  right: -10px;
-  display: inline-block;
-  font-size: 17px;
-  color: #ea644a;
-  content: '*';
-  }
-.form-horizontal .required:after {
-  top: 5px;
-  right: -1px;
-  }
 .close {
   float: right;
   font-size: 19.5px;
